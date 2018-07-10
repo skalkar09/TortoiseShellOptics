@@ -1,0 +1,262 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+header {
+  height: 30rem;
+  padding-top: 1rem;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.logoMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.logo span {
+  color: white;
+  font-size: 1rem;
+}
+
+.navDesktop {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.navMobile {
+  display: none;
+  margin-right: 1rem;
+}
+
+nav span {
+  padding: 0 1rem;
+  color: white;
+}
+
+.bannerContainer {
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner {
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.service img {
+    margin-bottom: 1rem;
+}
+
+.comprehensiveExamImage {
+  width: 3.5rem;
+}
+
+.otherServiceImage {
+  width: 5rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+}
+
+.info {
+  max-width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.infoHeader {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+}
+
+.infoDescription{
+  padding: 1rem 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  max-width: 960px;
+  padding: 4rem;
+  margin: auto;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+    padding-top: 0rem;
+  }
+
+  .logoMenu {
+    max-width: 100%;
+  }
+
+  .banner {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .banner h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    height: 17rem;
+    padding-top: 0rem;
+    background-position: 20%;
+  }
+
+  .logoMenu {
+    max-width: 100%;
+  }
+
+  .bannerContainer {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .banner {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 9rem auto 0 auto;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  footer {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  footer img {
+    margin: 0;
+  }
+
+  footer span {
+    display: none;
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .service {
+    height: auto;
+    margin: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+  .information {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .info {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .infoHeader {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .infoDescription{
+    padding: 1rem 0;
+    font-size: 0.77rem;
+  }
+
+
+}
